@@ -15,8 +15,12 @@ public class CustomerService {
 
     @PostConstruct
     public void init() {
-        customerData.put(1L, new Customer(1L, "John Doe", 0));
-        customerData.put(2L, new Customer(2L, "Jane Smith", 8));  // Jane has some loyalty points.
+        customerData.put(1L, new Customer(1L, "Vishwesh Shivapooja", 0));
+        customerData.put(2L, new Customer(2L, "Jane Smith", 8));// Jane has some loyalty points.
+        customerData.put(3L, new Customer(3L, "Luke Sims", 5));
+        customerData.put(4L, new Customer(4L, "Tom Smithy", 0));
+        customerData.put(5L, new Customer(5L, "Shauna Dennings", 1));
+        customerData.put(6L, new Customer(6L, "Tom Hanks", 3));
     }
 
     public Optional<Customer> getCustomerById(Long id) {
